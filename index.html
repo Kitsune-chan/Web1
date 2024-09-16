@@ -3,12 +3,160 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/bootstrap.css">
         <title>Моя тестовая страница</title>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     </head>
     <script>
-        
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            }
+        };
     </script>
 <body> 
-    Что-то внутри
+    <header class="pt-3 pb-3">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="p-3 el-of-header">
+                    <a class="text-center text-header">Теория</a>
+                </div>
+                <div class="p-3 el-of-header">
+                    <a class="text-center text-header">Примеры</a>
+                </div>
+                <div class="p-3 el-of-header">
+                    <a class="text-center text-header">Text</a>
+                </div>
+            </div>
+        </div>
+    </header>
+        
+    <section class="pt-v pb-v">
+        <div class="container">
+            <div class="table-wrapper">
+                <div class="column-of-table">
+                    <div class="border-el-of-column el-of-first-column">
+                        <p class="text-center rotate-270-deg for-formulas">
+                            \[\begin{align}&\overrightarrow{{{\tau }_{0}}}=(\cos\alpha,\cos\beta,\cos\gamma )\\ &\\ \end{align}\]
+                        </p>
+                    </div>
+                    <div class="border-el-of-column el-of-first-column">
+                        <p class="text-center rotate-270-deg for-formulas"> \[\begin{align}
+                            & \overrightarrow{{{n}_{0}}}=(\cos \alpha ,\cos \beta ,\cos \gamma ) \\ 
+                           &  \\ 
+                          \end{align}\]
+                        </p>
+                    </div>
+                </div>
+                <div class="column-of-table">
+                    <div class="border-el-of-column el-of-second-column">
+                        <p class="text-center for-formulas">\[\begin{align}
+                            & \int\limits_{AB}^{{}}{(P\cos \alpha }+Q\cos \beta +R\cos \gamma )dl= \\
+                           & ....................................... \\ 
+                           & =\int\limits_{AB}^{{}}{Pdx+Qdy+Rdz} \\ 
+                           &  \\ 
+                          \end{align}\]
+                        </p>
+                    </div>
+                    <div class="border-el-of-column el-of-second-column">
+                        <p class="text-center for-formulas">
+                            \[\begin{align}
+            & \oint\limits_{\partial S}{Pdx+Qdy+Rdz=} \\ 
+            & ....................................... \\
+           & =\iint\limits_{S}{\left| \left. \begin{matrix}
+             \cos \alpha  & \cos \beta  & \cos \gamma   \\
+             \frac{\partial }{\partial x} & \frac{\partial }{\partial y} & \frac{\partial }{\partial z}  \\
+             P & Q & R  \\
+          \end{matrix} \right| \right.}dS \\ 
+          \end{align}\] 
+                        </p>
+                    </div>
+                    <div class="border-el-of-column el-of-second-column">
+                        <p class="text-center for-formulas">
+                            \[\begin{align}
+            & \iint\limits_{S}{(P\cos \alpha +Q\cos \beta +R\cos \gamma )dS=} \\
+            & ....................................... \\  
+         & =\iint\limits_{S}{Pdydz+Qdzdx+Rdxdy} \\ 
+        \end{align}\]
+                        </p>
+                    </div>
+                </div>
+                <div class="column-of-table">
+                    <div class="border-el-of-column el-of-third-column">
+                        <p><strong>КИ 1</strong></p>
+                    </div>
+                    <div class="border-el-of-column el-of-third-column">
+                        <p><strong>КИ 2</strong></p>
+                    </div>
+                    <div class="border-el-of-column el-of-third-column">
+                        <p><strong></strong></p>
+                    </div>
+                    <div class="border-el-of-column el-of-third-column">
+                        <p><strong>ПИ 1</strong></p>
+                    </div>
+                    <div class="border-el-of-column el-of-third-column">
+                        <p><strong>ПИ 2</strong></p>
+                    </div>
+                </div>
+                <div class="column-of-table">
+                    <div class="border-el-of-column el-of-fourth-column">
+                        <p class="text-center for-formulas">
+                            \[\int\limits_{AB}^{{}}{fdl=\int\limits_{a}^{b}{f\cdot \sqrt{{{(\varphi ')}^{2}}+{{(\psi ')}^{2}}+{{(\chi ')}^{2}}}}}dt\]
+                        </p>
+                    </div>
+                    <div class="border-el-of-column el-of-fourth-column">
+                        <p class="text-center for-formulas">
+                            \[\int\limits_{AB}{Pdx+Qdx+Rdz=\int\limits_{a}^{b}{(P\varphi '(t)+Q\psi '(t)+R\chi '(t))dt}}\]
+                        </p>
+                    </div>
+                    <div class="border-el-of-column el-of-fourth-column">
+                        <p class="text-center for-formulas">
+                            \[\begin{align}
+            & \oint\limits_{\partial S}{Pdx+Qdy+Rdz}  
+            =\iint\limits_{S}{\left| \left. \begin{matrix}
+             \cos \alpha  & \cos \beta  & \cos \gamma   \\
+             \frac{\partial }{\partial x} & \frac{\partial }{\partial y} & \frac{\partial }{\partial z}  \\
+             P & Q & R  \\
+          \end{matrix} \right| \right.}dS \\ 
+          \end{align}\] 
+                        </p>
+                    </div>
+                    <div class="border-el-of-column el-of-fourth-column">
+                        <p class="text-center for-formulas">
+                            $\iint\limits_{S}{fdS=\iint\limits_{{{S}_{u\nu }}}{f\sqrt{{{A}^{2}}+{{B}^{2}}+{{C}^{2}}}dud\nu }}$
+                        </p>
+                    </div>
+                    <div class="border-el-of-column el-of-fourth-column">
+                        <p class="text-center for-formulas">
+                            $\iint\limits_{S}{Pdydz+Qdzdx+Rdxdy=\iint\limits_{{{S}_{uv}}}{(AP+BQ+CR)dudv}}$
+                        </p>
+                    </div>
+                    <div class="border-el-of-column el-of-fourth-column">
+                        <p class="text-center for-formulas">
+                            \[\mathop{{\int\!\!\!\!\!\int}\mkern-21mu \bigcirc}\limits_S 
+            Pdydz+Qdzdx+Rdxdy =\iiint\limits_{V}{(\frac{\partial P}{\partial x}+\frac{\partial Q}{\partial y}+\frac{\partial R}{\partial z})}\]
+                        </p>
+                    </div>
+                </div>
+                <div class="column-of-table">
+                    <div class="border-el-of-column el-of-fifth-column">
+                        <p><strong>R1</strong></p>
+                    </div>
+                    <div class="border-el-of-column el-of-fifth-column">
+                        <p><strong>R2</strong></p>
+                    </div>
+                    <div class="border-el-of-column el-of-fifth-column">
+                        <p><strong>R3</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <script src="scripts/script.js"></script>
 </body>
 </html>
+<Section></Section>
